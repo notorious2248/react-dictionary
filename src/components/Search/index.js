@@ -39,10 +39,10 @@ const Search = () => {
     }
     return (
         <>
-            <div className='mb-4' style={{ display: 'flex' }}>
+            <div className='mb-4 mt-2' style={{ display: 'flex' }}>
                 <InputGroup>
                     <Input bsSize='lg' onChange={(e) => handleChange(e.target.value)} id='word' name='word'
-                        onKeyDown={(e) => handleKeyPress(e)} />
+                        onKeyDown={(e) => handleKeyPress(e)} placeholder='Enter text here'/>
                     <Button onClick={() => searchWord()} color="success"
                         disabled={searchedWord != '' ? false : true}>
                         Search
