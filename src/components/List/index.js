@@ -2,7 +2,6 @@ import React from 'react';
 
 const List = (props) => {
     let { data, index } = props;
-    console.log('asdojasd', data)
     return (
         <div key={data.word + index + 'inlist'}>
             <ul class="list-unstyled">
